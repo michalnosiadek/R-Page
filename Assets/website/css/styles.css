@@ -1,0 +1,372 @@
+@font-face {
+    font-family: "sofiasanssemicondensed";
+    src: url("../../website/css/fonts/static/SofiaSansSemiCondensed.ttf") format("truetype"),
+    /*opentype still missing, SVG MISSING  EOT MISSUNG*/
+    }
+
+
+:root {
+    --ReviColor-Dark: #14191E;
+    --ReviColor-Light: #EBE6DC;
+    --ReviColor-AquaBlue: #04666F;
+    --ReviColor-Wheat100: #F7A82D;
+}
+body,input, textarea, button, h2 {
+    font-family: "sofiasanssemicondensed";
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+@media (max-width: 1500px){
+
+  .display{
+    height:100vh;
+    width: 100%;
+    background-image: url('../../resources/BGs/Illustrations/test_not_fullscreen.png');
+    padding:0;
+    margin:0;
+  }
+
+}
+
+.footer{
+    margin-left: 5%;
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    grid-template-columns: auto auto;
+    width: 30%;
+    height: 20%;
+    color: var(--ReviColor-Light);
+    position: relative;
+    bottom:-80%;
+    left:0;
+}
+
+.footer button{
+
+    border: none;
+    background-color: transparent;
+    color: white;
+    text-shadow: #14191E;
+    cursor: pointer;;
+}
+
+.contact.info{
+    color: white;
+    padding:5%;
+    overflow: hidden;
+}
+
+.topnav{
+    display: grid;
+    height: 64px;
+    width: 100%;
+    right: 0;
+    top: 0;
+    position: fixed;
+    font-size: 17px;
+    z-index: 10;
+    background-color: var(--ReviColor-Dark);
+    grid-template-columns: auto auto auto auto auto auto;
+    box-shadow: inset;
+}
+.search-container{
+    display:inline-flex;
+}
+.topnav input[type=text] {
+    float: left;
+    background: none;
+    height: inherit;
+    margin : 0;
+    padding:0;
+    border: none;
+    position: relative;
+    font-size: 17px;
+    background-color: var(--ReviColor-Dark);
+    color: var(--ReviColor-Light);
+  }
+
+  .topnav .search-container button {
+    float: right;
+    display: flex;
+    align-items: center;
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+    background-color: var(--ReviColor-Dark);
+  }
+  
+
+.topnav :nth-child(n) {
+    border: none;
+    background: none;
+    color: var(--ReviColor-Light);
+    height: inherit;
+}
+
+
+.topnav :nth-child(1) {
+  background: url('../../resources/Logos/Logo_pack/Logo_straight_white.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top:3px;
+  padding-bottom: 3px;
+  padding-left: 0px;
+  padding-right: 0px;
+  height: 58px;
+}
+
+.topnav :nth-child(6) {
+    padding: 1px;
+    background: url('../../resources/Buttons/Important\ Button.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 125%;
+    right: -25%;
+    position: relative;
+}
+
+.topnav :nth-child(n):hover {
+  color: grey;
+  text-shadow:0px 0px 45px grey,0px 0px 45px grey,0px 0px 45px grey; /* #d0970a*/
+  text-decoration: underline;
+  cursor: pointer;
+
+}
+
+.topnav :nth-child(6):hover {
+  cursor: pointer;
+  text-shadow: none;
+  color:var(--ReviColor-Light);
+  text-decoration: none;
+}
+
+
+.display{
+    height:100vh;
+    width: 100%;
+    display: block;
+    overflow-y: scroll;
+    padding:0;
+    margin:0;
+    
+}
+
+.display_small{
+  height:100vh;
+    width: 100%;
+    display: none;
+    overflow-y: scroll;
+    padding:0;
+    margin:0;
+    background-image: url('../../resources/BGs/Illustrations/test_not_fullscreen.png');
+    
+}
+
+.infobox {
+    background-image: url('../../resources/infoxbox/infobox_landingpage.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    color: var(--ReviColor-Light);
+    position: relative;
+    height: 43%;
+    width: 24%;
+    display: block;
+    top: 10%;
+    text-align: center;
+    left: 10%;
+}
+
+.infobox h3 {
+  top: 30%;
+  position: relative;
+  padding-left: 10px;
+  padding-right: 10px;
+  contain: layout;
+}
+
+
+.infoboxdiscord{
+
+    background-image: url('../../resources/infoxbox/infobox_landingpage_inverted.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    top: -10%;
+    color: var(--ReviColor-Light);
+    right: -64%;
+    position: relative;
+    text-align: center;
+    display: block;
+    height: 43%;
+    width: 24%;
+    contain: layout;
+}
+.infoboxdiscord button{
+    background-image: url(../../resources/Buttons/discord-logo-white.png);
+    width: 60%;
+    height: 15%;
+    background-color: transparent;
+    top: 50%;
+    left: 20%;
+    background-size: contain;
+    border: none;
+    background-position: center;
+    position: absolute;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    contain:layout; 
+  }
+  .infoboxdiscord h3{
+    top: 25%;
+    width: 100%;
+    position: absolute;
+  }
+
+
+.display.landingpage1{
+    background-image: url('../../resources/BGs/Illustrations/testwithborder.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: bottom;
+    padding:0;
+    margin:0;
+    overflow-y: hidden;
+}
+
+.display.landingpage2{
+    background-image: url('../../resources/infoxbox/second.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200vh;
+    padding:0;
+    margin:0;
+    overflow: hidden;
+    background-position-y: bottom;
+}
+
+.display.landingpage3{
+    background-image: url('../../resources/infoxbox/third.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: top;
+    overflow-y: hidden;
+}
+
+
+.container {
+    padding: 16px;
+    display: grid;
+    row-gap: 15px;
+}
+
+  .cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+  }
+  
+  /* Center the image and position the close button */
+  .imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+    color:white;
+  }
+
+.reg{
+    width: 60%;
+    background-color: var(--ReviColor-AquaBlue);
+}
+
+.reg.button{
+    width:30%;
+    height: 42px;
+    border-radius: 15px;
+    background-color: var(--ReviColor-Wheat100);
+}
+
+.input[type=text]{
+    width: 70%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    background-color: var(--ReviColor-AquaBlue);
+    border: 1px solid --ReviColor-Light;
+    box-sizing: border-box;
+  }
+
+  .input[type=password]{
+    width: 70%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    background-color: var(--ReviColor-AquaBlue);
+    border: 1px solid --ReviColor-Light;
+    box-sizing: border-box;
+  }
+
+
+  .modal{
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    color: #c8cccb;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    background-color: var(--ReviColor-Dark);
+    width: 80%; /* Could be more or less, depending on screen size */
+    height: 80%;
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: white;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+
+

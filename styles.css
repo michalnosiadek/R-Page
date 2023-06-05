@@ -1,0 +1,13 @@
+/* body {
+    background: url('Assets/resources/BGs/Illustrations/ReviAiArt_Arena_tribunes_with_people_of_many_races_crab-_people_1413483b-dbc3-4882-8336-29cf5e7aa5df-gigapixel-art-scale-4_00x.png') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+  } */
+
+  .bg-image {
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+  }
